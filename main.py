@@ -1,6 +1,7 @@
 import argparse
 from speech import SpeechController
 
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("text", nargs="?", help="Tekst do wypowiedzenia")
@@ -27,6 +28,7 @@ def main():
         ctrl.speak_and_play(args.text)
     else:
         print("Podaj tekst")
+
 
 if __name__ == "__main__":
     main()
